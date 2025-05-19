@@ -8,17 +8,23 @@ To write a program to find the LU Decomposition of a matrix.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-### Step 1:  
-Import the necessary libraries: numpy and lu function from scipy.linalg.
 
-### Step 2:  
-Define the matrix A using np.array() with given elements. 
-
-### Step 3:  
-Perform LU decomposition using lu(A) to get matrices P, L, and U. 
-
-### Step 4:  
-Display the matrices L, and U using print().  
+### To find the L and U matrix:
+```
+Step 1: Import Numpy library as np. 
+Step 2: Read a matrix A from user input.
+Step 3: Perform LU decomposition of matrix A using SciPy's lu function, which returns permutation matrix P,
+        lower triangular matrix L, and upper triangular matrix U.
+Step 4: Print the lower triangular matrix L and the upper triangular matrix U.
+```
+### To find the LU Decomposition of a matrix:
+```
+Step 1: Read matrix A and vector b from user input. 
+Step 2: Compute the LU decomposition of A using lu_factor, which returns LU matrix and pivot indices.
+Step 3: Use lu_solve to solve the linear system Ax = b using the LU decomposition.
+Step 4: Solution: Print the solution vector X.
+```
+  
 
 ## Program:
 (i) To find the L and U matrix
